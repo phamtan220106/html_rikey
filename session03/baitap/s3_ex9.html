@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><i><em>form đăng ký thành viên nhóm kín hội khăn giấy ướt</em></i></h1>
+    <form action="http://www.myseerver.com" method="post">
+        <label for="name">Họ Và Tên: </label>
+        <input placeholder="Phạm VĂn A" type="text" name="name" id="name" required><br/> 
+        
+        <label for="birthday">Ngày SInh: </label>
+        <input type="date" name="date" id="date" required><br/>
+        
+        <label for="gender">Giới tính: </label>
+        <input type="radio" name="gender" value="gender_nam" id="gender">
+        <label for="gender">Nam</label>
+        <input type="radio" name="gender" value="gender_nu" id="gender">
+        <label for="gender">Nữ</label><br/>
+
+        <label for="numberphone">Số điện thoại: </label>
+        <input type="telephone" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br/>
+
+        <label for="email">Email: </label>
+        <input placeholder="@gmail.com" type="email" name="email" id="email" required><br/>
+
+        <label for="">Địa chỉ: </label>
+        <textarea name="Địa chỉ" id="điạ chỉ"></textarea><br/>
+
+        <!-- <label for="">Loại căn cước công dân: </label><!-- 
+        <input type="radio" name="Loại căn cước công dân" value="Loại căn cước công dân_cũ">
+        <label for="">cũ</label>
+        <input type="radio" name="Loại căn cước công dân" value="Loại căn cước công dân_mới">
+        <label for="">mới</label><br/>
+
+        <label for="">Dân tộc: </label>
+        <input type="text" name="Dân tộc" value="Dân tộc" required><br/>
+
+        <label for="">Tôn giáo: </label>
+        <input type="text" name="Tôn giáo" value="tôn giáo" required><br/> -->
+ 
+        <label for="">Vai trò trong nhóm: </label>
+        <select name="Vai trò" id="">
+            <option value="admin" selected>admin</option>
+            <option value="member">member</option>
+        </select><br/>
+
+        <label for="">Sở thích: </label>
+        <input placeholder="sở thích" type="text" name="" id=""><br>
+
+        <label for="">Kĩ năng: </label>
+        <textarea name="Kĩ năng" id=""></textarea><br/>
+
+        <label for="">Thời gian gian rảnh: </label>
+        <input type="checkbox" name="time" id="time" value="time_sáng">
+        <label for="">sáng </label>
+        <input type="checkbox" name="time" id="time" value="time_tối">
+        <label for="">Tối </label><br/>
+
+        <label for="">LÍ do tham gia nhóm: </label>
+        <input type="text" name="" id="" value=""><br/>
+
+        <label for="">Màu yêu thích: </label>
+        <input type="color"><br/>
+
+        <label for="">Đăng kí nhận bản tin: </label>
+        <input type="checkbox">
+        <label for="">có</label><br/>
+
+        <label for="">Hình thức nhận thông báo</label>
+        <input type="radio" name="thông báo" id="thông báo">
+        <label for="">Email</label>
+        <input type="radio" name="thông báo" id="thông báo">
+        <label for="">SMS</label><br/>
+        <button>DĂng kí thành viên</button>
+
+    </form>
+</body>
+</html>

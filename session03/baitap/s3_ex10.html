@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><i><em>form đăng ký thành viên CLB CEO</em></i></h1>
+    <form action="http://www.myseerver.com" method="post">
+        <label for="name">Họ Và Tên: </label>
+        <input placeholder="Phạm VĂn A" type="text" name="name" id="name" required><br/> 
+        
+        <label for="birthday">Ngày SInh: </label>
+        <input type="date" name="date" id="date" required><br/>
+        
+        <label for="gender">Giới tính: </label>
+        <input type="radio" name="gender" value="gender_nam" id="gender">
+        <label for="gender">Nam</label>
+        <input type="radio" name="gender" value="gender_nu" id="gender">
+        <label for="gender">Nữ</label><br/>
+
+        <label for="numberphone">Số điện thoại: </label>
+        <input type="telephone" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br/>
+
+        <label for="email">Email: </label>
+        <input placeholder="@gmail.com" type="email" name="email" id="email" required><br/>
+
+        <label for="">Tên Công ty: </label>
+        <textarea name="Tên công ty" id="tên công ty"></textarea><br/>
+
+        <!-- <label for="">Loại căn cước công dân: </label><!-- 
+        <input type="radio" name="Loại căn cước công dân" value="Loại căn cước công dân_cũ">
+        <label for="">cũ</label>
+        <input type="radio" name="Loại căn cước công dân" value="Loại căn cước công dân_mới">
+        <label for="">mới</label><br/>
+
+        <label for="">Dân tộc: </label>
+        <input type="text" name="Dân tộc" value="Dân tộc" required><br/>
+
+        <label for="">Tôn giáo: </label>
+        <input type="text" name="Tôn giáo" value="tôn giáo" required><br/> -->
+ 
+        <label for="">Vai trò trong công ty: </label>
+        <select name="Vai trò" id="">
+            <option value="Giám đốc điều hành" selected>Giám đốc điều hành</option>
+            <option value="phó giám đốc">phó giám đốc</option>
+        </select><br/>
+ 
+        <label for="">Quy mô cocong ty: </label>
+        <select name="Quy mô" id="">
+            <option value="nhỏ" selected>Doanh nghiệp nhỏ</option>
+            <option value="lớn">doanh nghiệp lớn</option>
+        </select><br/>
+
+        <label for="">Ngành nghề công ty: </label>
+        <input placeholder="nghề" type="text" name="" id=""><br>
+
+        <label for="">lí do tham gia ClB: </label>
+        <textarea name="Kĩ năng" id=""></textarea><br/>
+
+        <label for="">kinh nghiệm lãnh đạo: </label>
+        <textarea name="kinh nghiệm lãnh đạo" id=""></textarea><br/>
+
+        <label for="">Mục tiêu khi tham gia CLB: </label>
+        <textarea name="Mục tiêu" id=""></textarea><br/>
+
+        <label for="">Chương trình sự kiện mong muốn tham gia: </label>
+        <input type="checkbox" name="sự kiện" id="sự kiện" value="sự kiện_Networking">
+        <label for="">Networking </label>
+        <input type="checkbox" name="sự kiện" id="sự kiện" value="sự kiện_Workshops">
+        <label for="">Workshops </label>
+        <input type="checkbox" name="sự kiện" id="sự kiện" value="sự kiện_Hội thảo">
+        <label for="">Hội thảo </label><br/>
+
+        <label for="">Đăng kí nhận bản tin: </label>
+        <input type="checkbox">
+        <label for="">có</label><br/>
+
+        <button>DĂng kí thành viên</button>
+
+    </form>
+</body>
+</html>
