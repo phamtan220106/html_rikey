@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://www.myseerver.com" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <h2>Biểu mẫu đặt hàng</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="">Sản phẩm:</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Số lượng:</label>
+                    </td>
+                    <td>
+                        <input type="number" max="10" min="1" step="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3">
+                        <label for=""><h2>thông tin liên hệ</h2></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Tên:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="tên" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Địa chỉ:</label>
+                    </td>
+                    <td>
+                        <textarea name="địa chỉ" id=""></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><button>Đặt hàng</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
