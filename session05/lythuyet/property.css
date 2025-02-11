@@ -1,0 +1,12 @@
+/* reset css về mặc định 
+    
+*/
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: aqua;
+    width: 200px;
+}

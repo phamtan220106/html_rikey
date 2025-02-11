@@ -1,0 +1,31 @@
+
+
+h2 {
+    margin-top: 2px;
+}
+
+p {
+    color: gray;
+}
+
+b {
+    color: black;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+.one{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    width: 40%;
+}
+.allimg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+}

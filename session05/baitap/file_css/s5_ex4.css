@@ -1,0 +1,13 @@
+table td{
+    border-top-left-radius: 0%;
+    vertical-align: top;
+}
+.caption{
+    font-weight: bolder;
+}
+.cp{
+    font-weight: bolder;
+}
+.cp2{
+    opacity: 0.5;
+}

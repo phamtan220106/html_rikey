@@ -1,0 +1,51 @@
+.bangto{
+    background-color: rgb(227, 235, 238);
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 45%;
+}
+
+table,tr,th,td {
+    border-collapse: collapse;
+    text-align: left; 
+}
+
+.tb{
+    background-color: white;
+    border: 1px solid ;
+    width: 200%;
+}
+.usedname{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+.tb td {
+    border: 1px solid rgb(151, 148, 148);
+    background-color: rgb(227, 235, 238);
+}
+.Email{
+    opacity: 0.5;
+}
+.fullbang{
+    width: 198%;
+}
+.name{
+    width: 95%;
+}
+form{
+    border: none;
+}
+.carb{
+    opacity: 0.5;
+}
+.carb2{
+    opacity: 0;
+}
+.button{
+    background-color: aqua;
+    width: 200%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+}

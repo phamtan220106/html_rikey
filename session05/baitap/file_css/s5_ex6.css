@@ -1,0 +1,32 @@
+
+.chu {
+    text-align: center;
+    color: red;
+}
+
+p.solid {
+    border-style: solid;
+    border-color: rgb(20, 141, 81);
+    text-align: center;
+    height: 20px;
+    padding: 15px;
+}
+
+p.vien2 {
+    background-color: rgb(228, 226, 222);
+}
+
+.vien {
+    color: #000000;
+    border-left: 3px solid rgb(218, 27, 27);
+    padding: 10px;
+}
+
+button {
+    width: 170px;
+    height: 30px;
+    border: none;
+    background-color: rgb(49, 177, 134);
+    color: aliceblue;
+    margin-top: 10px;
+}

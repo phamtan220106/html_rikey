@@ -1,0 +1,12 @@
+h1 {
+    /* color: aliceblue; */
+}
+p {
+    background-color: black;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150;
+}
+button {
+    background-color: #34ab31;
+}

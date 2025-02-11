@@ -1,0 +1,14 @@
+* {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: purple;
+}
+
+.body2 {
+    background-color: beige;
+    border-left: 10px solid yellow;
+    padding: 10px;
+}
