@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Thiết lập font chữ cho toàn bộ trang là 'Roboto', nếu không có thì sẽ dùng font sans-serif */
+}
+
+.box {
+    width: 300px;
+    /* Đặt chiều rộng của phần tử .box là 300px */
+    padding: 20px;
+    /* Thêm khoảng cách bên trong phần tử (cách nội dung với viền) là 20px */
+    margin: 50px auto;
+    /* Đặt khoảng cách ngoài phần tử (giữa phần tử và các phần tử khác) là 50px trên dưới và tự động canh giữa trái phải */
+    border: 2px solid #333;
+    /* Đặt viền của phần tử là 2px, kiểu solid và màu sắc #333 (xám đậm) */
+    border-radius: 10px;
+    /* Bo tròn các góc của phần tử với bán kính 10px */
+    text-align: center;
+    /* Canh giữa nội dung văn bản trong phần tử */
+    background-color: #f4f4f4;
+    /* Đặt màu nền cho phần tử là màu xám sáng */
+}
+
+.transition-example {
+    width: 200px;
+    /* Đặt chiều rộng của phần tử .transition-example là 200px */
+    padding: 20px;
+    /* Thêm khoảng cách bên trong phần tử là 20px */
+    margin: 30px auto;
+    /* Đặt khoảng cách ngoài phần tử là 30px trên dưới và tự động canh giữa trái phải */
+    border: 2px solid #333;
+    /* Đặt viền của phần tử là 2px, kiểu solid và màu sắc #333 */
+    text-align: center;
+    /* Canh giữa nội dung văn bản trong phần tử */
+    background-color: #eaeaea;
+    /* Đặt màu nền cho phần tử là xám nhạt */
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    /* Áp dụng hiệu ứng chuyển đổi cho màu nền và phép biến đổi (transform) với thời gian 0.5 giây và chuyển động mượt mà */
+}
+
+.transition-example:hover {
+    background-color: #ff6347;
+    /* Khi hover vào phần tử, màu nền sẽ chuyển thành #ff6347 (màu đỏ) */
+    transform: scale(1.1);
+    /* Khi hover vào, phần tử sẽ phóng to 10% (1.1 lần kích thước ban đầu) */
+}
+
+.transform-example {
+    width: 200px;
+    /* Đặt chiều rộng của phần tử .transform-example là 200px */
+    padding: 20px;
+    /* Thêm khoảng cách bên trong phần tử là 20px */
+    margin: 30px auto;
+    /* Đặt khoảng cách ngoài phần tử là 30px trên dưới và tự động canh giữa trái phải */
+    border: 2px solid #333;
+    /* Đặt viền của phần tử là 2px, kiểu solid và màu sắc #333 */
+    text-align: center;
+    /* Canh giữa nội dung văn bản trong phần tử */
+    background-color: #eaeaea;
+    /* Đặt màu nền cho phần tử là xám nhạt */
+    transition: transform 0.5s ease;
+    /* Áp dụng hiệu ứng chuyển đổi cho phép biến đổi (transform) với thời gian 0.5 giây và chuyển động mượt mà */
+}
+
+.transform-example:hover {
+    transform: rotate(15deg);
+    /* Khi hover vào, phần tử sẽ xoay 15 độ theo chiều kim đồng hồ */
+    
+}
+<!-- 1. Thẻ Box Model (CSS)
+content: Nội dung chính của phần tử.
+padding: Khoảng cách giữa nội dung và đường viền của phần tử.
+border: Đường viền bao quanh phần tử.
+margin: Khoảng cách giữa phần tử và các phần tử khác xung quanh.
+2. Thẻ Border (CSS)
+border-width: Định nghĩa độ dày của đường viền.
+border-style: Định nghĩa kiểu dáng của đường viền.
+border-color: Định nghĩa màu sắc của đường viền.
+border-radius: Bo tròn các góc của đường viền.
+3. Thẻ Margin và Padding (CSS)
+margin: Khoảng cách ngoài giữa phần tử và các phần tử khác.
+padding: Khoảng cách bên trong giữa nội dung và đường viền của phần tử.
+4. Thẻ Display (CSS)
+display: block: Hiển thị phần tử dưới dạng khối.
+display: inline: Hiển thị phần tử dưới dạng nội tuyến.
+display: inline-block: Kết hợp giữa block và inline.
+display: none: Ẩn phần tử, không hiển thị và không chiếm không gian.
+5. Thẻ Position (CSS)
+position: static: Mặc định, phần tử không có vị trí định sẵn.
+position: relative: Định vị phần tử dựa trên vị trí ban đầu.
+position: absolute: Định vị phần tử dựa trên phần tử tổ tiên có position khác static.
+position: fixed: Định vị phần tử cố định trong viewport.
+position: sticky: Định vị phần tử dính trong khi cuộn.
+6. Thẻ Transition (CSS)
+transition-property: Thuộc tính CSS mà bạn muốn áp dụng hiệu ứng chuyển đổi.
+transition-duration: Thời gian thực hiện chuyển đổi.
+transition-timing-function: Điều chỉnh tốc độ của hiệu ứng.
+transition-delay: Thời gian trì hoãn trước khi bắt đầu hiệu ứng.
+7. Thẻ Transform (CSS)
+translate: Dịch chuyển phần tử theo trục x và y.
+rotate: Xoay phần tử một góc nhất định.
+scale: Phóng to hoặc thu nhỏ phần tử.
+8. Thẻ Google Fonts (CSS)
+@import: Sử dụng để tải font từ Google Fonts trong CSS.
+<link>: Nhúng font từ Google Fonts vào trong HTML thông qua thẻ <link>.
+ -->

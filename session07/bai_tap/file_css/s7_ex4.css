@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+.top{
+    border-left: 10px solid yellow;
+}
+.header{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.body{
+    position: relative;
+}
+.body p{
+    position: absolute;
+    width: 280px;
+    margin: 5px;
+    font-size: x-large;
+    color: white;
+    top: 320px;
+}
+.caption{
+    margin: 5px;
+}
+.caption hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

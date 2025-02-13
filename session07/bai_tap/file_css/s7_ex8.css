@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    height: 500px;
+    border: 1px;
+    border-color: rgb(216, 211, 211);
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    margin-left: 30px;
+    opacity: 0.7;
+}
+i{
+    opacity: 0.6;
+}
+button{
+    background-color: #ffeeca;
+    color: #bd3803;
+    border-color: #ffcc85;
+    width: 110px;
+    height: 24px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.person{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.budget{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin-top: -15px;
+}
+.account{
+    position: absolute;
+    top: 16px;
+}
+p{ 
+    font-size: 19px;
+}
+.font_progress{
+    display: flex;
+    gap: 285px;
+    margin-top: -10px;
+}
+.progress-bar {
+    height: 6px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    width: 76%;
+    background: orange;
+}
+span{
+    margin-top: 100px;
+}
+.span{
+    margin-top: 30px;
+    
+}
+.allimg{
+    position: relative;
+    margin-top: 30px;
+}
+.image{
+    position: absolute;
+    top: 0px;
+    left: 45px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.task{
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+}

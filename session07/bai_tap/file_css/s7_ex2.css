@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(249, 244, 254);
+    margin: 20px;
+}
+.header{
+    position: relative;
+    height: 200px;
+}
+.body{
+    height: 210px;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+.member{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+}
+.member:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+}
+.member h1{
+    color: red;
+}
+.member p{
+    font-size: large;
+}
+table{
+    width: 100%;
+}

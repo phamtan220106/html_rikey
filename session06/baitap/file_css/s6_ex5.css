@@ -29,6 +29,7 @@ form{
     text-align: center;
     flex-direction: column;
     background-color: rgb(223, 217, 221);
+    font-size: xx-large;
 }
 h1{
     font-size: 200%;
@@ -43,7 +44,8 @@ div p{
     background-color: aqua;
     width: 10%;
     border-radius: 10px;
-    height: 5%;
+    height: 10%;
+    font-size: x-large;
 }
 .figure p{
     background-color: black;

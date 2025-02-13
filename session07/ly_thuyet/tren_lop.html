@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tren_lop.css">
+</head>
+<body>
+    <!-- 
+        box_modal: mô hình hộp
+        bên trong cái hộp
+
+        1.marin:    khoảng cách giữa các khối 
+        2.border:   độ dày của đường viền khối
+        3.padding:  khoảng cách từ border đến contern  
+        4.contern:  nội dung
+
+        độ rộng của khối bằng border + padding + contern
+    -->
+        <div class="conterner">
+            học box_modal css!
+        </div>
+        <div class="contern">
+            vô địch cùng cảnh giới
+        </div>
+        <!-- 
+            position: định vị vị trí của khối
+
+            có 5 giá trị
+
+            1. static:  mặc định
+            2: relative:
+                khi phần tử có thuộc tính : position_relative thì nó sẽ lấy vị 
+                trí hiện tại làm gốc 
+            3.absolute: vị trí tuyệt đối
+                khi phần tử có thuộc tính position_absolute: nó sẽ khiểm tra xem 
+                có phần tử cha nào chứ nó có thuộc tính position=1 trong 4 điều
+                 đang liệt kê. thì sẽ láy làm gốc, còn ko thì sẽ lấy vị trí của 
+                 màn hình trình duyệt làm gốc
+            4.fiexd: cố định phần tử
+
+            5.stick:    định vị phần tử khi scrool
+            
+        -->
+
+        <div class="relative">
+            <div class="box1">
+                relative
+            </div>
+            <div class="box2">
+                haha
+            </div>
+        </div>
+        <div class="top">
+            phần đầu trang
+            <div class="main">
+                phần thân trang
+            </div>
+        </div>
+
+</body>
+</html>

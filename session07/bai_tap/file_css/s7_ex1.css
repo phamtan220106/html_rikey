@@ -1,0 +1,34 @@
+.header{
+    background-color: rgb(227, 232, 238);
+    width: 50%;
+    height: 300px;
+}
+.select{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.header img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+button:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+}
+button{
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+}
+.b1{
+    background-color: red;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.b2{
+    border-radius: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

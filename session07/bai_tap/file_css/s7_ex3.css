@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+h3{
+    opacity: 0.8;
+}
+p{
+    opacity: 0.5;
+}
