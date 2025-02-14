@@ -1,0 +1,34 @@
+.title p{
+    border-bottom: 2px solid red;
+    font-size: larger;
+    display: inline-block; 
+    padding-bottom: 10px;
+}
+.member{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20PX;
+}
+.account {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.account i.material-icons {
+    font-size: 100px; 
+    display: flex;
+    padding-right: 20px;
+}
+.list{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    margin: 20px;
+}

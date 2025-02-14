@@ -1,13 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body form {
     display: flex;
     justify-content: center;
     font-family: Arial, sans-serif;
+    margin: 10px;
 }
-.header{
+
+.header {
     width: 500px;
     border: 2px solid black;
     border-radius: 5px;
@@ -15,53 +18,67 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 }
-.header h1{
+
+.header h1 {
     position: relative;
     width: 100%;
     height: 50px;
     background-color: red;
     color: white;
 }
-.name{
+
+.name {
     opacity: 0.7;
     font-size: larger;
 }
-.content{
+
+.content {
     color: rgb(229, 103, 53);
 }
-.body{
+
+.body {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 20px 0 20px ;
+    margin: 20px 0 20px;
 }
-hr{
+
+hr {
     width: 95%;
 
     height: 2px;
 }
-.b1{
+
+.b1 {
     width: 50%;
     height: 30px;
     margin: 10px 0px 10px 0px;
-    border: 2px solid ;
+    border: 2px solid;
     background-color: red;
 }
-.b2{
+
+.b2 {
     width: 30%;
     height: 30px;
     margin: 10px 0px 10px 0px;
     border: 2px solid red;
     background-color: white;
-    
+
 }
-button{
+
+button {
     border-radius: 20px;
 }
-button:hover{
-    transition: transform 0.2s ease; 
+
+button:hover {
+    transition: transform 0.2s ease;
     transform: scale(1.05);
+}
+.img{
+    position: relative;
+    bottom: 20px;
+    right: 50px;
 }

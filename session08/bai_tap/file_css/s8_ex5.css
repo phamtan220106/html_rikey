@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    width: 600px;
+    height: 450px;
+    background-color: #fbfbfb;
+    border-right: 3px solid black;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    opacity: 0.5;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.hr1 {
+    width: 70px;
+    margin-top: 20px;
+}
+
+.caption_button {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.Dowload {
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.lear_More {
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.account {
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    color: white;
+    padding-left: 5px;
+}
+button:hover{
+    transform: scale(1.1); 
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.9); 
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+.fb{
+    position: relative;
+    top: 10px;
+}
+.figger{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    opacity: 0.5;
+}
+span{
+    border-bottom: 2px dotted black; /* Đặt đường kẻ gạch chân kiểu chấm */
+    padding-bottom: 2px;
+}
+.bg2{
+    background-color: #f7f7f7;
+    height: 185px;
+}
