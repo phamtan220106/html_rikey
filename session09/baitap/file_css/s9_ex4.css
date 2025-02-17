@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.boder {
+    width: 60%;
+}
+
+.top {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.tbody {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    height: 500px;
+}
+
+.m1 {
+    background-color: bisque;
+    width: 38%;
+}
+
+.m2 {
+    background-color: chartreuse;
+    width: 60%;
+}
+
+.end {
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}

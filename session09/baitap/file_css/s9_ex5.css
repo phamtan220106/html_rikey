@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.member{
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+.one,.two{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
