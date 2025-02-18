@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    background-color: #bababa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 60px 20px 60px;
+    gap: 20px;
+}
+.member{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.time{
+    display: flex;
+    gap: 20px;
+}
+.bgr{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+.Work{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+} 
+.contract .fb,.twiter{
+    border-radius: 50%;
+}

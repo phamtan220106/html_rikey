@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caption {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid rgb(211, 202, 202);
+    border-bottom: 1px solid rgb(211, 202, 202);
+}
+
+.options {
+    width: 80%;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 130px;
+    gap: 30px;
+}
+
+.Epape {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+}
+
+.Epape a {
+    text-decoration: none;
+    color: rgb(26, 242, 242);
+}
+.container{
+    display: flex;
+
+}
+.describe{
+    width: 40%;
+}
+.figgerone{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    width: 75%;
+    height: 80px;
+    background-color: white;
+}
+.describe p{
+    position: relative;
+    bottom: 40px;
+}
+.News,.paper{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+.headline{
+    background-color: yellow;
+    height: 30px;
+    width: 170px;
+    text-align: center;
+    line-height: 30px;
+}
+.zbody{
+    line-height:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 20px 0px 20px;
+}
+.top{
+    background-color: #f8f8f8;
+}
+.next{
+    text-align: right;
+}
+/* .paper .fig{
+    color: aqua;
+} */
+.mail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.mail p{
+    width: 70%;
+    opacity: 0.5;
+}
+.mail .bt{
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mail button{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #0c79ff;
+    color: white;
+}
+.next a{
+    text-decoration: none;
+    color: rgb(19, 150, 155);
+}
+
+button:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+}
+
+a:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+    border-bottom: 1px solid black;
+}

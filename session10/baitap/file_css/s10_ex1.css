@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.NavigationBar{
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+h1{
+    font-family:Sans-serif;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.option{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: #b9b9b9;
+}
+.search{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    padding-right:5px;
+    border: none;
+    background-color: #8d939e;
+    border-radius: 5px;
+    font-size: large;
+}
+.account{
+    position: relative;
+    left: 35px;
+    top: 5px;
+    z-index: 999;
+}
+button:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+    color: white;
+}
+a:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+    border-bottom: 1px solid black;
+    color: black;
+}

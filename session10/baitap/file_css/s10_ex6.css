@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    background-color: #f1f3f7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 60px 20px 60px;
+    gap: 20px;
+}
+
+.content {
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://th.bing.com/th/id/OIP.OOYRRTvlnRi9x_X7rR6DQQHaE8?rs=1&pid=ImgDetMain);
+}
+
+.content button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    margin-bottom: 100px;
+}
+
+.figer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.one {
+    font-size: x-large;
+}
+.start{
+    transform: rotate(180deg);
+}
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bab8b8;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.next:hover{
+    background-color: black;
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+    transform: rotate(180deg);
+}
