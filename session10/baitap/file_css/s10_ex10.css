@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin: 20px;
+    display: flex;
+}
+
+.image {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.shoping {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.boder {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.starone {
+    width: 130px;
+    display: flex;
+    border-right: 2px solid black;
+}
+
+.New {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.star {
+    display: flex;
+    gap: 20px;
+}
+
+.Size,
+.color {
+    display: flex;
+    gap: 20px;
+}
+
+.Size p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.color p {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.option {
+    display: flex;
+    gap: 20px;
+}
+
+.op1 {
+    height: 30px;
+    width: 60px;
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.op2,
+.op3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.fig {
+    display: flex;
+    gap: 20PX;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+.HOVER:hover{
+    transition: transform 0.2s ease; 
+    transform: scale(1.05);
+}
