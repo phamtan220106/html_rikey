@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.header {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.top{
+    display: flex;
+    width: 75%;
+    gap: 20px;
+}
+.rikey{
+    width: 33%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contract {
+    width: 25%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 67%;
+}
+
+.member {
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width:1200px) {
+    .contract {
+        width: 25%;
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header {
+        margin: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .top{
+        width: 100%;
+    }
+    .rikey{
+        width: 25%;
+        height: 300px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:880px){
+    .top{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container,.rikey,.contract{
+        width: 100%;
+    }
+    .header{
+        padding: 10px;
+    }
+    .rikey{
+        height: 60px;
+    }
+
+
+    
+}

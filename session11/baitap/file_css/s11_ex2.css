@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.container .row {
+    width: 96%;
+    height: 1cm;
+    background-color: red;
+    border: 2px solid black;
+}
+.container .haicot{
+    width: 96%;
+    height: 3.4cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .bacot{
+    width: 96%;
+    height: 3.4cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.haicot .columtop {
+    width: 48%;
+    height: 3.2cm;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.bacot .columbottom {
+    width: 31%;
+    height: 3.2cm;
+    background-color: green;
+    border: 1px solid black;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 13.5cm;
+    }
+    .container .haicot{
+        width: 96%;
+        height: 4.4cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container .bacot{
+        width: 96%;
+        height: 6.6cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .haicot .columtop {
+        width: 96%;
+        height: 2cm;
+        background-color: yellow;
+        border: 1px solid black;
+    }
+    .bacot .columbottom {
+        width: 96%;
+        height: 2cm;
+        background-color: green;
+        border: 1px solid black;
+    }
+}

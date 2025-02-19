@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caption{
+    height: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+.sheach{
+    width: 70%;
+}
+.sheach input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+.option{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+.header{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b2d6ff;
+}
+.zbody{
+    display: flex;
+    width: 100%;
+    background-color: chartreuse;
+}
+.long{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.p1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+.p1 div{
+    width: 100%;
+}
+.one,.two,.three,.four,.five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: calc(100%/3);
+    height: 200px;
+    background-color: #f5cf8d;
+}
+.p2{
+    width: 100%;
+    display: flex;
+}
+.p2 div{
+    width: calc(100%/3);
+    height: 200px;
+    position: relative;
+    right: 100px;
+}
