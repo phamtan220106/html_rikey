@@ -1,0 +1,48 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-size: x-large;
+    border-bottom: 1px solid black;
+}
+.image{
+    background-image: url(https://coverdog.s3.us-east-2.amazonaws.com/wp-content/uploads/20201127184528/154833.jpg);
+    width: 350px;
+    height: 260px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 40px;
+    color: white;
+}
+.d-flex{
+    gap: 20px;
+}
+.figg{
+    width: 90%;
+    display: flex;
+}
+.one{
+    width: 30%;
+}
+.one img{
+    border-radius: 50%;
+}
+.two{
+    width: 70%;
+    text-align: right;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}

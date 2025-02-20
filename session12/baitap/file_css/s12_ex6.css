@@ -1,0 +1,27 @@
+.member{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    width: 95%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: x-large;
+}
+.two{
+    background-color: yellow;
+}
+.d-flex{
+    gap: 20px;
+}

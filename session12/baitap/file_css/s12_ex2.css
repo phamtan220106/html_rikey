@@ -1,0 +1,64 @@
+.mb-3 {
+    margin-bottom: 1rem !important
+}
+
+.form-label {
+    margin-bottom: .5rem
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #6c757d
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem
+}
+
+.form-check-input:disabled~.form-check-label,
+.form-check-input[disabled]~.form-check-label {
+    opacity: .5
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.boder {
+    width: 50%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1ee445;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.btn:hover {
+    color: #212529
+}
