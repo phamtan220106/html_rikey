@@ -51,11 +51,6 @@ function inputString(stringg) {
 }
 
 function outputString(stringg) {
-    // let h="";
-    // for(let i=0; i<stringg.length; i++){
-    //     h+=stringg[i];
-    // }
-    // alert(h);
     alert(stringg);
 }
 
