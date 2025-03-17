@@ -24,3 +24,4 @@ if ((hour < 0 || hour > 24) && (minute < 0 || minute > 60) (second < 0 || second
 } else {
     readtime(hour,minute,second);
 }
+
