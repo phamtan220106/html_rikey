@@ -70,6 +70,7 @@ function UserManagement() {// quản lí người dùng_________________________
                 add(member, 2);
                 break;
             case 2:
+                Registercourse();
                 break;
             case 3:
                 break;
@@ -226,7 +227,46 @@ function viewMenu(A) {
 
    alert(result);
 }
+function Registercourse() {
+    let userId = validate(6, member); 
+    let courseId = validate(5, Purchased_Course);
 
-function Registercourse(A){
+    // Tìm người dùng
+    let user = member.find(u => u.id === userId);
+    // Tìm khóa học
+    let course = Purchased_Course.find(c => c.id === courseId);
+
+    // Kiểm tra xem người dùng đã đăng ký khóa học này chưa
+    if (user.registeredCourses.includes(courseId)) {
+        alert(`Bạn đã đăng ký khóa học này rồi!`);
+        return;
+    }
+    // thêm khóa họ và ds
+    user.registeredCourses.push(courseId);
+    // thêm ng dùng vào ds
+    course.students.push(userId);
+    alert(`${user.name} đã đăng ký khóa học "${course.name}" thành công!`);
+}
+
+function delRegistercourse(){
+    
+    let userId = validate(6, member); //ng dùng
+    let courseId = validate(5, Purchased_Course);//khóa học
+
+    // Tìm người dùng
+    let user = member.find(u => u.id === userId);
+    // Tìm khóa học
+    let course = Purchased_Course.find(c => c.id === courseId);
+    
+    // Kiểm tra xem người dùng đã đăng ký khóa học này chưa
+    if (!user.registeredCourses.includes(courseId)) {
+        alert(`chưa đăng kí khóa học`);
+        return;
+    }
+
+
+
+
+
 
 }
