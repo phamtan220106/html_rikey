@@ -1,0 +1,24 @@
+.big{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.click{
+    display: flex;
+    gap: 20px;
+}
+button{
+    width: 90px;
+    height: 90px;
+}
+
+.green{
+    background-color: rgb(31, 230, 31);
+}
+.red{
+    background-color: red;
+}
+.purple{
+    background-color: rgb(221, 62, 221);
+}

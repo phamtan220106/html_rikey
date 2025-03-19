@@ -53,7 +53,7 @@ function CourseManagement() {//quản lí khóa học___________________________
     }
 }
 
-function Menucourse() {//menu quản lí khóa học
+function Menucourse() {//menu quản lí khóa học_________________________________________xong
     return Number(prompt(`1.Thêm khóa học.
 2.Tìm kiếm khóa học theo tên.
 3.Xóa khóa học.
@@ -61,7 +61,7 @@ function Menucourse() {//menu quản lí khóa học
 4.Thoát.`));
 }
 
-function UserManagement() {// quản lí người dùng________________________________________chưa xong
+function UserManagement() {// quản lí người dùng_______________________________________xong
     let t = true;
     while (t) {
         let choice = Menuuser();
@@ -73,8 +73,10 @@ function UserManagement() {// quản lí người dùng_________________________
                 Registercourse();
                 break;
             case 3:
+                delRegistercourse();
                 break;
             case 4:
+                viewcourse();
                 break;
             case 5:
                 t = false;
@@ -225,10 +227,11 @@ function viewMenu(A) {
         result += `${A.id} - Tên: ${A.name} - Giảng viên: ${A.instructor}\n`;
     });
 
-   alert(result);
+    alert(result);
 }
+
 function Registercourse() {
-    let userId = validate(6, member); 
+    let userId = validate(6, member);
     let courseId = validate(5, Purchased_Course);
 
     // Tìm người dùng
@@ -248,25 +251,51 @@ function Registercourse() {
     alert(`${user.name} đã đăng ký khóa học "${course.name}" thành công!`);
 }
 
-function delRegistercourse(){
-    
-    let userId = validate(6, member); //ng dùng
-    let courseId = validate(5, Purchased_Course);//khóa học
+function delRegistercourse() {
+    let userId = validate(6, member); // Nhập ID người dùng
+    let courseId = validate(5, Purchased_Course); // Nhập ID khóa học
 
-    // Tìm người dùng
+    // Tìm người dùng và khóa học
     let user = member.find(u => u.id === userId);
-    // Tìm khóa học
     let course = Purchased_Course.find(c => c.id === courseId);
-    
+
     // Kiểm tra xem người dùng đã đăng ký khóa học này chưa
-    if (!user.registeredCourses.includes(courseId)) {
-        alert(`chưa đăng kí khóa học`);
+    let courseIndex = user.registeredCourses.indexOf(courseId);
+    if (courseIndex === -1) {
+        alert(`Người dùng chưa đăng ký khóa học này!`);
         return;
     }
 
+    // Xóa khóa học khỏi danh sách đăng ký của người dùng
+    user.registeredCourses.splice(courseIndex, 1);
 
+    // Xóa người dùng khỏi danh sách học viên của khóa học
+    let studentIndex = course.students.indexOf(userId);
+    if (studentIndex !== -1) {
+        course.students.splice(studentIndex, 1);
+    }
 
-
-
-
+    alert(`${user.name} đã hủy đăng ký khóa học "${course.name}" thành công!`);
 }
+
+function viewcourse() {
+    let userId = validate(6, member);
+    let user = member.find(u => u.id === userId);
+
+    if (user.registeredCourses.length === 0) {
+        alert(`${user.name} chưa đăng ký khóa học nào!`);
+        return;
+    }
+
+    let h = `Danh sách khóa học của ${user.name}:\n`;
+
+    user.registeredCourses.forEach(courseId => {
+        let course = Purchased_Course.find(c => c.id === courseId);
+        if (course) {
+            h += `ID: ${course.id} - Tên: ${course.name} - Giảng viên: ${course.instructor}\n`;
+        }
+    });
+
+    alert(h);
+}
+
