@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 100px;
+        }
+        
+        #to {
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center
+          
+            
+        }
+        #nho {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Chu xe thay doi kick thuong khi bam nut</p>
+        <span id="to">+</span><span id="nho">-</span>
+    </div>
+    
+    <script>
+        let fontText = 100;
+        document.getElementById("to").addEventListener("click",function(){
+            fontText += 20;
+            document.getElementsByTagName("p")[0].style.fontSize = `${fontText}px`;
+        });
+        document.getElementById("nho").addEventListener("click",function(){
+            fontText -= 20;
+            document.getElementsByTagName("p")[0].style.fontSize = `${fontText}px`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách người yêu cũ</title>
+    <link rel="stylesheet" href="../css/s31_ex10.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sách người yêu cũ</h1>
+
+        <div class="header">
+            <div class="inputmember">
+                <label for="member">Nhân viên</label>
+                <input type="text" class="member" id="member">
+            </div>
+            <div class="inputaffair">
+                <label for="affair">Công việc</label>
+                <input type="text" class="affair" id="affair">
+            </div>
+        </div>
+
+        <button class="Add" >Thêm nyc</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Công việc</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Dữ liệu sẽ được thêm vào đây -->
+            </tbody>
+        </table>
+
+        <!-- Phân trang -->
+        <ul>
+            <button class="previous editpage">Previous</button>
+            <button class="next editpage">Next</button>
+        </ul>
+    </div>
+
+    <script src="../js/s31_ex10.js"></script>
+</body>
+
+</html>

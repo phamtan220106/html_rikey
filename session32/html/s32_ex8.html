@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .edit-btn,
+        .delete-btn {
+            margin-left: 10px;
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .edit-btn {
+            background-color: orange;
+            color: white;
+        }
+
+        .delete-btn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="in">
+    <button onclick="addItem()">Add</button>
+
+    <ul id="List"></ul>
+
+    <script>
+        let taskId = 0;
+
+        function addItem() {
+            let input = document.getElementById("in");
+            let text = input.value.trim();
+            if (text === "") {
+                alert("công việc không được bỏ trống nha");
+                return;
+            }
+
+            taskId++;
+            let li = document.createElement("li");
+            li.id = "liElement" + taskId;
+            li.innerHTML = `<span>${text}</span> 
+                            <button class="edit-btn" onclick="editItem(${taskId})">Edit</button>
+                            <button class="delete-btn" onclick="delItem(${taskId})">xóa</button>`;
+            document.getElementById("List").appendChild(li);
+            input.value = "";
+        }
+
+        function editItem(row) {
+            let item = document.getElementById("liElement" + row);
+            let newText = prompt("Edit task:", item.querySelector("span").textContent);
+            if (newText !== null && newText.trim() !== "") {
+                item.querySelector("span").textContent = newText;
+            }
+        }
+
+        function delItem(row) {
+            let item = document.getElementById("liElement" + row);
+            let confirmDelete = confirm("bạn có chắc là muốn xóa công việc này");
+            if (confirmDelete) {
+                item.remove();
+            }
+        }
+    </script>
+</body>
+
+</html>

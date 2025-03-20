@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 40px;
+    align-items: center;
+    background-color: blueviolet;
+    border: 1px solid rgb(149, 149, 149);
+    display: flex;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.header div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgb(149, 149, 149);
+}
+
+button{
+    width: 100px;
+}
+
+.editpage{
+    background: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th{
+    background-color: aliceblue;
+}
+ul{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.page{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

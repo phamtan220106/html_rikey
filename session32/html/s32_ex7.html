@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/s32_ex7.css">
+</head>
+<body>
+    <script src="../js/s32_ex7.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Resize Image</title>
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+          
+           
+        }
+        div {
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="myImage" src="./img/z6408579993039_4d46c1cce9312e78e1ac8c256cb5c39a.jpg" alt="Image">
+    </div>
+    
+    <script>
+        let img = document.getElementById("myImage");
+        let container = document.getElementById("container");
+        let defaultSize = 50;
+        let size = defaultSize;
+
+        
+        img.addEventListener("click", function(event) {
+            event.stopPropagation(); // Ngăn chặn sự kiện lan truyền lên div
+            size += 20;
+            img.style.width = `${size}px`;
+            img.style.height = `${size}px`;
+        });
+
+       
+        container.addEventListener("click", function() {
+            size = defaultSize;
+            img.style.width = `${size}px`;
+            img.style.height = `${size}px`;
+        });
+    </script>
+</body>
+</html>

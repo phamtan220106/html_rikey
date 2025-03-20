@@ -22,10 +22,12 @@ newtr.innerHTML=`
     <td>${name}</n>
     <td>${age}</n>
     <td>${city}</n>
+
 `//thêm giá trị vào bảng
+
 tablebody.appendChild(newtr);// thêm vào mảng , thêm dòng vào bảng
 
-// xóa ác giá trị để có thể cập nhật các người dùng tiếp theo
+// xóa các giá trị để có thể cập nhật các người dùng tiếp theo
 document.getElementById("name").value="";
 document.getElementById("age").value="";
 document.getElementById("city").value="";
