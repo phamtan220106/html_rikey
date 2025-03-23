@@ -1,3 +1,4 @@
+
 document.querySelector(".Add").addEventListener("click", addMember);
 document.querySelector(".member").addEventListener("keypress", function (e) {
     if (e.key === "Enter") addMember();
@@ -71,13 +72,13 @@ function updatePagination() {
         pageButton.textContent = i;
 
         //ấn vào nút trang
-        // pageButton.addEventListener("click", function () {
-        //     // đặt trang hiện tại thành i(nút bấm )
-        //     currentPage = i;
+        pageButton.addEventListener("click", function () {
+            // đặt trang hiện tại thành i(nút bấm )
+            currentPage = i;
 
-        //     // đặt lại bảng
-        //     updateTable();
-        // });
+            // đặt lại bảng
+            updateTable();
+        });
         
         paginationContainer.appendChild(pageButton);
     }

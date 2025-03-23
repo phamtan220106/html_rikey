@@ -1,0 +1,13 @@
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.material-icons{
+    position: relative;
+    right: 40px;
+    top: 7px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/s33_ex7.css">
+</head>
+
+<body>
+    <h1>Cửa hàng Đơn giản</h1>
+
+    <div class="container">
+        <div class="products-container">
+            <h2>Sản phẩm</h2>
+            <div class="product-grid" id="product-grid">
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/335177/samsung-galaxy-a56-5g-green-thumb-600x600.jpg"
+                        alt="Điện thoại Samsung Galaxy A54" class="product-image">
+                    <div class="product-title">Điện thoại Samsung Galaxy A54</div>
+                    <div class="product-price">7.490.000₫</div>
+                    <button class="add-to-cart-btn" data-id="1">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://bizweb.dktcdn.net/100/446/400/products/laptop-dell-vostro-3490-1-gia-loc.jpg?v=1699258008053"
+                        alt="Laptop Dell Inspiron 15" class="product-image">
+                    <div class="product-title">Laptop Dell Inspiron 15</div>
+                    <div class="product-price">15.990.000₫</div>
+                    <button class="add-to-cart-btn" data-id="2">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FMT_WHH?wid=750&amp;hei=556&amp;fmt=jpeg&amp;qlt=90&amp;.v=1724041668836"
+                        alt="Tai nghe AirPods Pro" class="product-image">
+                    <div class="product-title">Tai nghe AirPods Pro</div>
+                    <div class="product-price">4.990.000₫</div>
+                    <button class="add-to-cart-btn" data-id="3">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-nc-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR?wid=752&amp;hei=720&amp;bgc=fafafa&amp;trim=1&amp;fmt=p-jpg&amp;qlt=80&amp;.v=TnVrdDZWRlZzTURKbHFqOGh0dGpVRW5TeWJ6QW43NUFnQ2V4cmRFc1VnYUdWejZ5THhpKzJwRmRDYlhxN2o5aXB2QjR6TEZ4ZThxM3VqYkZobmlXM3RGNnlaeXQ4NGFKQTAzc0NGeHR2aVk0VEhOZEFKYmY1ZHNpalQ3YVhOWk9WVlBjZVFuazArV21YaFcvTVJ5dzR2eDMxaWg4TFhITTVrUW41Z084dENpYmZuSTdFUnErS0g3SWYxazQrNDdyRzE3K0tORmZaUy9vOVdqTEp2dmJNL3gwYlE3R0w4Z1RCbG9qQTd1MjYyL1owaE5aVCt2Ri82aDRacTg0bXlaZA"
+                        alt="Đồng hồ thông minh Apple Watch" class="product-image">
+                    <div class="product-title">Đồng hồ thông minh Apple Watch</div>
+                    <div class="product-price">8.990.000₫</div>
+                    <button class="add-to-cart-btn" data-id="4">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://cdn.vjshop.vn/may-anh/mirrorless/canon/canon-eos-r50/black-18-45/canon-eos-r50-lens-18-45mm-500x500.jpg"
+                        alt="Máy ảnh Canon EOS M50" class="product-image">
+                    <div class="product-title">Máy ảnh Canon EOS M50</div>
+                    <div class="product-price">12.490.000₫</div>
+                    <button class="add-to-cart-btn" data-id="5">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://bizweb.dktcdn.net/100/445/498/products/jbl-go-4-3-4-left-black-48178-x1.jpg?v=1732646465910"
+                        alt="Loa Bluetooth JBL Flip 5" class="product-image">
+                    <div class="product-title">Loa Bluetooth JBL Flip 5</div>
+                    <div class="product-price">2.190.000₫</div>
+                    <button class="add-to-cart-btn" data-id="6">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MvD76Mt-Ne0IC2DPMMsTZpG05xDxJOzkqw&amp;s"
+                        alt="Bàn phím cơ Logitech G Pro" class="product-image">
+                    <div class="product-title">Bàn phím cơ Logitech G Pro</div>
+                    <div class="product-price">2.490.000₫</div>
+                    <button class="add-to-cart-btn" data-id="7">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://product.hstatic.net/200000722513/product/h_mx_master_3_wireless__graphite_.jpg_1e5491e35f754dcc90b90582a9c3be95_ca0c63ca59de4ed1b4d46fcc5c81c1ed.png"
+                        alt="Chuột không dây Logitech MX Master" class="product-image">
+                    <div class="product-title">Chuột không dây Logitech MX Master</div>
+                    <div class="product-price">1.890.000₫</div>
+                    <button class="add-to-cart-btn" data-id="8">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <h2>Giỏ hàng</h2>
+            <div id="cart-items">
+                <div class="in-cart">
+                    <div class="amount">
+                        <p>name</p>
+                        <p class="amount-price">price<span><sup><u>đ</u></sup></span></p>
+                    </div>
+                    <div class="add-delete">
+                        <button class="giam">-</button>
+                        <p>1</p>
+                        <button class="buff">+</button>
+                        <button class="clear">X</button>
+                    </div>
+                </div>
+                <!-- <div class="empty-cart">Giỏ hàng trống</div> -->
+            </div>
+            <div class="cart-total" id="cart-total"> 0₫</div>
+            <button class="checkout-btn" id="checkout-btn">Thanh toán</button>
+        </div>
+    </div>
+
+    <script src="../js/s33_ex7.js"></script>
+</body>
+
+</html>
