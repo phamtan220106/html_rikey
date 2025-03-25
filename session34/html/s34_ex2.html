@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/s34_ex2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management</h1>
+
+        <div class="input-info">
+            <input type="text" name="" id="content-input" class="css-input">
+            <input type="date" class="date-input css-input">
+            <select name="" id="chose-status" class="css-input">
+                <!-- option -->
+                 <option>Chose-status</option>
+                 <option value="">pending</option>
+            </select>
+            <input type="text" class="Assigned-input css-input">
+            <button class="Submit-btn css-input">Submit</button>
+        </div>
+
+        <table class="is-table" cellpadding="5">
+            <thead>
+                <tr>
+                    <th class="th-#">#</th>
+                    <th class="th-content">content</th>
+                    <th class="th-due">due date</th>
+                    <th class="th-status">status</th>
+                    <th class="th-assigned">Assigned</th>
+                    <th class="th-action">Action</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-body">
+                <tr  >
+                    <td colspan="6" class="no-content">không có thông tin</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ssf</td>
+                    <td>sdfs</td>
+                    <td>sdfs</td>
+                    <td>sdfs</td>
+                    <td class="vld">
+                        <button class="update vld-btn">sửa</button>
+                        <button class="delete vld-btn">xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/s34_ex2.js"></script>
+</body>
+</html>
