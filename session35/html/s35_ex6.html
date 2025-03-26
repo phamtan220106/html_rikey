@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header p {
+            
+            padding: 15px 5px;
+            margin-right: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: green;
+        }
+        .header h1 {
+            margin-left: 10px;
+        }
+        .input {
+            display: flex;
+            justify-content: end;
+        }
+        .input .inputname {
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .input .inputname input {
+            border: none;
+        }
+        .category {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .category .category-header {
+            display: flex;
+            height: 30px;
+            width: 100%;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: rgb(238, 238, 238);
+        }
+        .category .category-header .maDM {
+            margin-left: 10px;
+        }
+        .category .category-header .tenDM {
+            margin-left: 170px;
+        }
+        .category .category-header p {
+            margin-left: 350px;
+            margin-right: 200px;
+        }
+        .body {
+            display: flex;
+            height: 30px;
+            width: 100%;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-top: 5px;
+        }
+        .body p{
+            margin-left: 10px;
+        }
+        .body .product {
+            margin-left: 225px;
+        }
+        .body span {
+            margin-left: 395px;
+            margin-right: 180px;
+        }
+        .body i {
+            margin-right: 20px;
+        }
+        .add {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-color: aliceblue;
+            border-radius: 10px;
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            display: none;
+        }
+        .head-add {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+           
+        }
+        .ennorId {
+            display: none;
+        }
+        .ennorName {
+            display: none;
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="header">
+           <h1> danh muc</h1> 
+          <p onclick="displayAdd()">them danh muc</p>
+        </div>
+        <div class="input">
+            <select name="" id="">
+                <option >tim kiem danh muc theo trang thai</option>
+                <option >dang hoat dong</option>
+                <option >ngung hoat dong</option>
+            </select>
+            <div class="inputname">
+                <input type="text" name="" id="search">
+                <span onclick="searchCategory()"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+        <div class="category">
+            <div class="category-header">
+                <div class="maDM">
+                    <span>Ma danh muc</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="tenDM">
+                    <span>ten danh muc</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </div>
+                <p>Trang thai</p>
+                <span>chuc nang</span>
+            </div>
+            <div class="list">
+
+            </div>
+            <!-- <div class="body">
+                <p>DM001</p>
+                <p class="product">Quan ao</p>
+                <span>dang hoat dong</span>
+                <i class="fa-solid fa-trash-can" id="delete"></i>
+                <i class="fa-solid fa-pen" id="update"></i>
+            </div>
+            <div class="body">
+                <p>DM001</p>
+                <p class="product">Quan ao</p>
+                <span>dang hoat dong</span>
+                <i class="fa-solid fa-trash-can" id="delete"></i>
+                <i class="fa-solid fa-pen" id="update"></i>
+            </div> -->
+        </div>
+        <div class="add">
+            <div class="head-add">
+                <h3>Them danh muc moi</h3>
+                <span onclick="cencelAdd()">X</span>
+            </div>
+            <div class="input-add">
+                <label for="" >Ma danh muc</label><br>
+                <input type="text"  id="addIddm"><br>
+                <p class="ennorId">loi input id danh muc</p>
+                <label for="" >Ten danh muc</label><br>
+                <input type="text" name=""  id="addNamedm"><br>
+                <p class="ennorName">loi input ten danh muc</p>
+                <label for="">Trang thai</label><br>
+                <input type="radio" id="on" name="1">
+                <label for="">dang hoat dong</label>
+                <input type="radio" id="off" name="1">
+                <label for="">ngung hoat dong</label>
+                <hr>
+                <button onclick="addCategory ()" class="them">them</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        displayCategory();
+        
+        function loadFile () {
+            let category = JSON.parse(localStorage.getItem("category"));
+            return category ? category:[];
+        }
+        function displayAdd (){
+            document.getElementsByClassName("add")[0].style.display="block";
+        }
+        function cencelAdd () {
+            document.getElementsByClassName("add")[0].style.display="none";
+        }
+        function displayCategory () {
+            let category = loadFile();
+            let str ="";
+            for(i=0;i<category.length;i++) {
+                str += `
+                        <div class="body">
+                            <p>${category[i].id}</p>
+                            <p class="product">${category[i].danhmuc}</p>
+                            <span>${category[i].trangthai}</span>
+                            <i onclick="deleteCategory (${i})" class="fa-solid fa-trash-can" id="delete"></i>
+                            <div onclick="updateCategory(${i})"><i class="fa-solid fa-pen" id="update"></i></div>
+                        </div>                
+                `;
+            }
+            document.getElementsByClassName("list")[0].innerHTML=str;
+
+        }
+        function addCategory () {
+            
+            let check;
+            let category = loadFile();
+            
+            let id = document.getElementById("addIddm").value;
+            let Name = document.getElementById("addNamedm").value;
+            if(id.length != 5) {
+                document.getElementsByClassName("ennorId")[0].style.display ="block";
+                return;
+            } else {
+                for(i=0;i<category.length;i++) {
+                    if(category[i].id==id) {
+                        document.getElementsByClassName("ennorId")[0].style.display ="block";
+                        return;
+                    }
+                }
+                document.getElementsByClassName("ennorId")[0].style.display ="none";
+            }
+            if(Name.length<1) {
+                document.getElementsByClassName("ennorName")[0].style.display ="block";
+                return;
+            } else {
+                document.getElementsByClassName("ennorName")[0].style.display ="none";
+            }
+            if(document.getElementById("on").checked == false && document.getElementById("off").checked==false){
+                alert("trang thai ko duoc de trong");
+                return;
+            } else if (document.getElementById("on").checked == true) {
+                check = "dang hoat dong";
+            } else {
+                check = "ngung hoat dong";
+            }
+            let newCategory = {
+                id : id,
+                danhmuc : Name,
+                trangthai : check,
+            };
+            category.push(newCategory);
+            localStorage.setItem("category",JSON.stringify(category));        
+            alert('them danh muc thanh cong');   
+            document.getElementById("addIddm").value ="";
+            document.getElementById("addNamedm").value="";
+            displayCategory();
+        }
+        function searchCategory () {
+            let category = loadFile();
+            let str ="";
+            let value =document.getElementById("search").value;
+            let newCategory = category.filter(category=>category.danhmuc==value);
+            if(newCategory=="") {
+                alert('danh muc khong ton tai');
+                return;
+            }
+            console.log (newCategory);
+            for(i=0;i<newCategory.length;i++) {
+                str += `
+                        <div class="body">
+                            <p>${newCategory[i].id}</p>
+                            <p class="product">${newCategory[i].danhmuc}</p>
+                            <span>${newCategory[i].trangthai}</span>
+                             <i onclick="deleteCategory (${i})" class="fa-solid fa-trash-can" id="delete"></i>
+                            <div onclick="updateCategory(${i})"><i class="fa-solid fa-pen" id="update"></i></div>
+                        </div>                
+                `;
+            }
+             
+            document.getElementsByClassName("list")[0].innerHTML=str;
+
+        }
+        function updateCategory(index) {
+            let category = loadFile();
+            let currentCategory = category[index];
+            document.getElementsByClassName("add")[0].style.display = "block";         
+            document.getElementById("addIddm").value = currentCategory.id;
+            document.getElementById("addNamedm").value = currentCategory.danhmuc;
+            if (currentCategory.trangthai === "dang hoat dong") {
+                document.getElementById("on").checked = true;
+            } else {
+                document.getElementById("off").checked = true;
+            }
+
+    
+            let btn = document.getElementsByClassName("them")[0];
+            btn.innerText = "Cập nhật";
+
+        
+            let newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+
+    
+            newBtn.addEventListener("click", function () {
+                let id = document.getElementById("addIddm").value;
+                let Name = document.getElementById("addNamedm").value;
+                let check;
+
+                if (id.length != 5) {
+                    document.getElementsByClassName("ennorId")[0].style.display = "block";
+                    return;
+                } else {
+                document.getElementsByClassName("ennorId")[0].style.display = "none";
+                }
+
+                if (Name.length < 1) {
+                    document.getElementsByClassName("ennorName")[0].style.display = "block";
+                    return;
+                } else {
+                    document.getElementsByClassName("ennorName")[0].style.display = "none";
+                }
+
+                if (document.getElementById("on").checked) {
+                    check = "dang hoat dong";
+                } else {
+                    check = "ngung hoat dong";
+                }
+
+       
+            category[index].id = id;
+            category[index].danhmuc = Name;
+            category[index].trangthai = check;
+            localStorage.setItem("category", JSON.stringify(category));
+            displayCategory();
+            document.getElementsByClassName("add")[0].style.display = "none";
+            newBtn.innerText = "Thêm";
+        });
+    }
+    function deleteCategory (index) {
+        let category = loadFile();
+        category.splice(index,1);
+        localStorage.setItem("category", JSON.stringify(category));
+        displayCategory();
+    }
+    document.getElementsByTagName("select")[0].addEventListener("change", function () {
+        let category = loadFile();
+        let selectedValue = document.getElementsByTagName("select")[0].value.trim();
+        let str = "";
+        if (selectedValue === "" || selectedValue === "tim kiem danh muc theo trang thai") {
+            displayCategory();
+            return;
+        }
+        let filteredCategory = category.filter(cat => cat.trangthai === selectedValue);
+        if (filteredCategory.length === 0) {
+            alert("Không tìm thấy danh mục nào có trạng thái này!");
+            return;
+        }
+        for (let i = 0; i < filteredCategory.length; i++) {
+            str += `
+                <div class="body">
+                    <p>${filteredCategory[i].id}</p>
+                    <p class="product">${filteredCategory[i].danhmuc}</p>
+                    <span>${filteredCategory[i].trangthai}</span>
+                    <i onclick="deleteCategory(${i})" class="fa-solid fa-trash-can" id="delete"></i>
+                    <div onclick="updateCategory(${i})"><i class="fa-solid fa-pen" id="update"></i></div>
+                </div>
+            `;
+        }
+
+        document.getElementsByClassName("list")[0].innerHTML = str;
+    });
+
+        
+    </script>
+</body>
+</html>
