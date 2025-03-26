@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-
+    
     // Hiển thị bảng khi load trang
     viewtable();
 });

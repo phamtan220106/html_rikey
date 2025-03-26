@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    /* display: none; */
+    width: 400px;
+    background-color: pink;
+    /* dispaly none */
+}
+
+.name-bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+}
+
+.hide {
+    /* color: white; */
+}
+
+.input {
+    background-color: aqua;
+    width: 100%;
+}
+
+.inp {
+    margin: 10px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 250px;
+}
+.save{
+    margin-left: 10px;
+}
