@@ -1,0 +1,45 @@
+/* Đặt lại một số kiểu mặc định để tránh lỗi hiển thị */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container{
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+
+}
+.food{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 255, 72);
+    color: white;
+}
